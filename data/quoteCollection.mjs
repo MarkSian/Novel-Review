@@ -1,4 +1,4 @@
-[
+const allQuote = [
     {
         "_id": "Q1",
         "characterId": "1",
@@ -140,3 +140,5 @@
         "isProfane": true
     }
 ]
+
+export default allQuote;

@@ -1,5 +1,5 @@
 // Characters Collection
-[
+const allCharacter = [
     {
         "_id": "1",
         "name": "Eric Cartman",
@@ -162,6 +162,7 @@
     }
 ]
 
+export default allCharacter
 
 
 
