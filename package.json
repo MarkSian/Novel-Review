@@ -1,7 +1,7 @@
 {
-  "name": "south-park-api",
+  "name": "novel-reviews",
   "version": "1.0.0",
-  "description": "A database for the show South Park",
+  "description": "A database for novels",
   "main": "server.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

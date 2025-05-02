@@ -1,5 +1,5 @@
-# South Park API
-A database for the show South Park
+# Novel
+A database novel reviews for fairly young critics
 
 1) Install dependencies **
 2) Create Data Folder to hold sample data **

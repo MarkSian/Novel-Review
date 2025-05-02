@@ -1,6 +1,11 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import connectDB from './db/conn.mjs';
+import kidRoute from './routes/criticRoute.mjs';
+import authorRoute from './routes/authorRoute.mjs';
+import novelRoute from './routes/novelRoute.mjs';
+import seedingRoute from './routes/seedingRoute.mjs'
+
 
 // Setup: Here we import the necessary modules. express() is a web framework for Node.js, and dotenv is used to load environment variables from the .evn file. Such as PORT and our DB_URI.
 dotenv.config(); // dotenv.config() allows us to use the variables from the .env file
@@ -15,11 +20,10 @@ app.use(express.urlencoded({ extended: true })); // app.use(express.urlencoded({
 connectDB(); // connectDB() is a function that connects to the MongoDB database.
 
 // Routes
-app.use('/api/characters', characterRoutes);
-app.use('/api/episodes', episodeRoutes);
-app.use('/api/quotes', quoteRoutes);
-
-// Seed Routes 
+app.use('/seed', seedingRoute);
+app.use('/api/novel', novelRoute);
+app.use('/api/kids', kidRoute);
+app.use('/api/authors', authorRoute);
 
 
 
