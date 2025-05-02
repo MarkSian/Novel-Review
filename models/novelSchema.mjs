@@ -12,7 +12,7 @@ const novelSchema = mongoose.Schema({
     },
     genre: {
         type: String,
-        required: [true, 'Genre must be one of the following: Adventure, Fantasy, Mystery, Educational, Fairy Tale'],
+        required: [true, 'Genre must be one of the following: Fiction', 'Non-Fiction', 'Fantasy', 'Science Fiction', 'Classic', 'Mystery', 'Adventure', 'Educational', 'Fairy Tale'],
         enum: {
             values: ['Fiction', 'Non-Fiction', 'Fantasy', 'Science Fiction', 'Classic', 'Mystery', 'Adventure', 'Educational', 'Fairy Tale']
         }
