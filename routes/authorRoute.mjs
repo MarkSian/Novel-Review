@@ -3,7 +3,7 @@ import Author from '../models/authorsSchema.mjs';
 
 const router = express.Router();
 
-//create a new author 
+// Create a new author 
 router.post('/', async (req, res) => {
     const newAuthor = await Author.create(req.body);
     res.status(201).json({
@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
     });
 })
 
-//delete author details from DB
+// Delete author details from DB
 router.delete('/:id', async (req, res) => {
     const deletedAuthor = await Author.findByIdAndDelete(req.params.id);
     res.json({
