@@ -26,3 +26,4 @@ Clone the repo and make sure all dependencies are installed. To start the server
 
 
 **Reflection**
+After completing this project. I really know where my weakness are now in terms of the backend. My inital plan was to create a South Park API, but I set that up to be a bit too complex for me. I learned that when your creating your schema and testing what is being returned, its best to do it incrementaly rather than all at once. My main takeaway is that I must do more backend setup and increase the complexity of it little by little. Can't wait to go back to the frontend.
