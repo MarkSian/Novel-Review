@@ -16,6 +16,7 @@ const authorSchemas = mongoose.Schema({
     birthDate: {
         type: String,
         required: true,
+        // Custom validation for birthDate format YYYY-MM-DD
         validate: {
             validator: function (value) {
                 const parts = value.split('-');

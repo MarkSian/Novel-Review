@@ -8,7 +8,7 @@ import Novel from '../models/novelSchema.mjs';
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-    //Delete all data
+    // Delete all data
     await Author.deleteMany({});
     await Critic.deleteMany({});
     await Novel.deleteMany({});

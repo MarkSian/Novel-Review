@@ -3,13 +3,13 @@ import Critic from '../models/criticSchema.mjs';
 
 const router = express.Router();
 
-//get all critic details
+// Get all critic details
 router.get('/', async (req, res) => {
     const allCritic = await Critic.find({});
     res.json(allCritic);
 })
 
-//update critic details
+// Update critic details
 router.patch('/:id', async (req, res) => {
     const updatedCritic = req.body;
     const results = await Critic.findByIdAndUpdate(req.params.id, updatedCritic, { new: true });
