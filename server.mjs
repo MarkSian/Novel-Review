@@ -15,7 +15,9 @@ app.use(express.urlencoded({ extended: true })); // app.use(express.urlencoded({
 connectDB(); // connectDB() is a function that connects to the MongoDB database.
 
 // Routes
-
+app.use('/api/characters', characterRoutes);
+app.use('/api/episodes', episodeRoutes);
+app.use('/api/quotes', quoteRoutes);
 
 // Seed Routes 
 
