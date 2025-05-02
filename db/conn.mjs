@@ -16,8 +16,7 @@ async function connectDB() {
     }
 }
 
-//function to do database level validation
-
+// Set validation for critic collection
 export async function createAuthorValidation() {
     const db = mongoose.connection.db;
     const collections = await db.listCollections({ name: 'authors' }).toArray();

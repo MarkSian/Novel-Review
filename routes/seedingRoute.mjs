@@ -14,12 +14,12 @@ router.get('/', async (req, res) => {
     await Novel.deleteMany({});
 
     await Author.create(authors).catch(err => {
-        console.error('Error seeding authors:', err);
+        console.error('Error Seeding Authors:', err);
     });
     await Critic.create(critic);
     await Novel.create(novel);
 
-    res.send('Data seeded succesfully!');
+    res.send('Data Seeded To DB!');
 });
 
 export default router;
