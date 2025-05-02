@@ -9,7 +9,7 @@ const authorSchemas = mongoose.Schema({
         type: String,
         required: true
     },
-    stories: {
+    novel: {
         type: [String],
         required: true
     },
