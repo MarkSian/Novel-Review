@@ -4,7 +4,7 @@ export const novel = [
         title: "The Secret Garden",
         author: "Mary Lennox",
         genre: "Classic",
-        rating: 5,
+        rating: 7,
         summary: "A lonely girl discovers a hidden garden and brings it back to life."
     },
     {
@@ -18,28 +18,28 @@ export const novel = [
         title: "The Case of the Missing Cookies",
         author: "Nancy Drew",
         genre: "Mystery",
-        rating: 4,
+        rating: 6,
         summary: "A young detective solves the case of who took the cookies from the jar."
     },
     {
         title: "The Science of Rainbows",
         author: "Albert Einstein",
         genre: "Educational",
-        rating: 4,
+        rating: 8,
         summary: "A colorful explanation of how rainbows form in the sky."
     },
     {
         title: "The Little Mermaid",
         author: "Hans Christian Andersen",
         genre: "Fairy Tale",
-        rating: 5,
+        rating: 8,
         summary: "A mermaid princess dreams of becoming human to be with the prince she loves."
     },
     {
         title: "Journey to the Center of the Earth",
         author: "Jules Verne",
         genre: "Adventure",
-        rating: 4,
+        rating: 7,
         summary: "An incredible expedition through volcanic tubes to the earth's core."
     },
     {
@@ -60,7 +60,7 @@ export const novel = [
         title: "The Human Body",
         author: "Bill Nye",
         genre: "Educational",
-        rating: 4,
+        rating: 5,
         summary: "An exciting exploration of how our bodies work through fun experiments."
     },
     {
