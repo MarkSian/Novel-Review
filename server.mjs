@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import connectDB from './db/conn.mjs';
-import kidRoute from './routes/criticRoute.mjs';
+import criticRoute from './routes/criticRoute.mjs';
 import authorRoute from './routes/authorRoute.mjs';
 import novelRoute from './routes/novelRoute.mjs';
 import seedingRoute from './routes/seedingRoute.mjs'
@@ -22,7 +22,7 @@ connectDB(); // connectDB() is a function that connects to the MongoDB database.
 // Routes
 app.use('/seed', seedingRoute);
 app.use('/api/novel', novelRoute);
-app.use('/api/kids', kidRoute);
+app.use('/api/critic', criticRoute);
 app.use('/api/authors', authorRoute);
 
 

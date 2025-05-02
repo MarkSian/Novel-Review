@@ -1,17 +1,17 @@
 import express from "express";
-import Crtic from '../models/criticSchema.mjs';
+import Critic from '../models/criticSchema.mjs';
 
 const router = express.Router();
 
-//get all kids details
+//get all critic details
 router.get('/', async (req, res) => {
     const allCritic = await Critic.find({});
     res.json(allCritic);
 })
 
-//update Kids details
+//update critic details
 router.patch('/:id', async (req, res) => {
-    const updatedCrtic = req.body;
+    const updatedCritic = req.body;
     const results = await Critic.findByIdAndUpdate(req.params.id, updatedCritic, { new: true });
     res.json(results);
 })
