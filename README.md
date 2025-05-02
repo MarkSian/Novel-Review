@@ -8,3 +8,4 @@ A database for the show South Park
 5) Create routes folder for routes **
 6) Create models folder **
 7) Create DB folder and conn.mjs file to connect to MongoDB **
+8) Create the Schema for the collections
